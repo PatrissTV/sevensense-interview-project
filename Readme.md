@@ -48,5 +48,5 @@ Here is a recording of the mission. The robots move to a random position and cov
 You can download the video <a href="https://raw.githubusercontent.com/PatrissTV/sevensense-interview-project/main/recordings/multi_agent_recording_seed_191.mp4"> here </a>.
 
 
-## Acknowledgements
+## Acknowledgments
 Thank you for this opportunity. I am looking forward to hearing from you soon!
