@@ -1,9 +1,12 @@
+
+# Build tools
 build-all:
 	colcon build --symlink-install
 
 build-controller:
 	colcon build --packages-select alphasense
 
+# Running the project
 spawn:
 	ros2 launch irobot_create_gazebo_bringup create3_gazebo.launch.py namespace:=alpha1 x:=0.0 y:=0.0 yaw:=0.0
 

@@ -16,7 +16,7 @@ I created a Makefile to run the commands comfortably. You can run the following 
 ```make spawn```, which spawns Rviz, Gazebo and a first robot.
 ```make spawn-second```, which adds another robot to the scene.
 ```make launch-alpha1```, which will run a controller for the first robot.
-```make launch-alpha1```, which will run a controller for the second robot.
+```make launch-alpha2```, which will run a controller for the second robot.
 
 The last two commands can also be run at different times.
 
@@ -25,7 +25,15 @@ Since both robots are running without communicating between each other, we assum
 
 When they get close enough, they will stop and replan with a random path that does not intersect with each other's safe zone. This safe zone is defined as a half plane that passes through both robots, normal to the line that connects them. 
 
+![Example](https://raw.githubusercontent.com/PatrissTV/sevensense-interview-project/main/recordings/collision.gif)
+
 ## Video
+Here is a recording of the mission. The robots move to a random position and cover the map. They will stop when they get close enough to each other, and replan their path to avoid a collision.
+
+<video src='https://raw.githubusercontent.com/PatrissTV/sevensense-interview-project/main/recordings/multi_agent_recording_seed_191.mp4' width=180/>
+
+You can also download the video <a href="https://raw.githubusercontent.com/PatrissTV/sevensense-interview-project/main/recordings/multi_agent_recording_seed_191.mp4"> here </a>.
+
 
 ## Acknowledgements
 Thank you for this opportunity. I am looking forward to hearing from you soon!
