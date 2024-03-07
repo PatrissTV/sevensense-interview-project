@@ -1,0 +1,7 @@
+[submodule "src/create3_sim"]
+	path = src/create3_sim
+	url = https://github.com/iRobotEducation/create3_sim
+	branch = humble
+[submodule "src/src/create3_sim"]
+	path = src/src/create3_sim
+	url = https://github.com/iRobotEducation/create3_sim

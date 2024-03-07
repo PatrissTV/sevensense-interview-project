@@ -1,0 +1,46 @@
+---
+/**:
+    ros__parameters:
+        use_sim_time: true
+
+        # Maximum random distance for generating random waypoints.
+        MAX_RAND_DIST: 2.0
+
+        # Minimum random distance for generating random waypoints.
+        MIN_RAND_DIST: 1.0
+
+        # Offset for docking position.
+        DOCKING_OFFSET_X: -0.55
+        DOCKING_OFFSET_Y: 0.0
+
+        # Offset for manual undocking position.
+        UNDOCK_MANUAL_X: -0.35
+        UNDOCK_MANUAL_Y: 0.0
+
+        # Maximum distance margin for collision avoidance.
+        MAX_DIST_MARGIN: 0.1
+
+        # Velocity for cruise control.
+        CRUISE_VELOCITY: 0.306
+
+        # Mission time. Should include time offset due to rotation (approximately 14 seconds).
+        MISSION_TIME: 46
+
+        # Collision radius for obstacle detection.
+        COLLISION_RADIUS: 0.5
+
+        # Covariance for collision radius.
+        COLLISION_RADIUS_COVARIANCE: 0.00005
+
+        # Offset for rival vehicle position.
+        RIVAL_OFFSET_X: 0.0
+        RIVAL_OFFSET_Y: 1.0
+
+        # Seed for random number generation.
+        RANDOM_SEED: 191
+
+        # Maximum and minimum coordinates for the convex playground in the local frame.
+        MAX_X: -0.2
+        MIN_X: -2.0
+        MAX_Y: 1.5
+        MIN_Y: -1.5
