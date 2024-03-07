@@ -1,22 +1,35 @@
 
-
-
-## Installation and usage
+## Installation
 
 Dear Sevensense Team. I have used the humble branch for create3_sim, since I am using Ubuntu 22.04.3. Make sure to also run humble to make this project work.
 
 In case you are using miniconda and ros can't find GLIBCXX_3.4.30, link the libstdc++ from usr/lib to the miniconda lib folder, i.e.
+
 ```ln -sf /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /home/patrick/miniconda3/lib/libstdc++.so.6```
 
 Install irobot msgs with:
+
 ```sudo apt-get install ros-humble-irobot-create-msgs```
 
+Install python packages if necessary:
+
+```pip install -r requirements.txt```
+
+## Usage
 I created a Makefile to run the commands comfortably. You can run the following commands to get the project running:
+
 ```make build-all```, to colcon build the packages.
+
+```make build-controller```, to colcon build the alphasense package only.
+
 ```make spawn```, which spawns Rviz, Gazebo and a first robot.
+
 ```make spawn-second```, which adds another robot to the scene.
+
 ```make launch-alpha1```, which will run a controller for the first robot.
+
 ```make launch-alpha2```, which will run a controller for the second robot.
+
 
 The last two commands can also be run at different times.
 
@@ -28,11 +41,11 @@ When they get close enough, they will stop and replan with a random path that do
 ![Example](https://raw.githubusercontent.com/PatrissTV/sevensense-interview-project/main/recordings/collision.gif)
 
 ## Video
-Here is a recording of the mission. The robots move to a random position and cover the map. They will stop when they get close enough to each other, and replan their path to avoid a collision.
+Here is a recording of the mission. The robots move to a random position and cover the map. They will stop when they get close enough to each other, and replan their path to avoid a collision. The docking services do not work when the robots are assigned with a namespace (at least with ROS2 Humble). Thus, the robots will position themselves to intercept the infra red signal from the docking station, but they will not dock. The time to complete the mission is around 1 minute, which excludes the docking and undocking procedures.
 
-<video src='https://raw.githubusercontent.com/PatrissTV/sevensense-interview-project/main/recordings/multi_agent_recording_seed_191.mp4' width=180/>
+![Example](https://raw.githubusercontent.com/PatrissTV/sevensense-interview-project/main/recordings/video_gif.gif)
 
-You can also download the video <a href="https://raw.githubusercontent.com/PatrissTV/sevensense-interview-project/main/recordings/multi_agent_recording_seed_191.mp4"> here </a>.
+You can download the video <a href="https://raw.githubusercontent.com/PatrissTV/sevensense-interview-project/main/recordings/multi_agent_recording_seed_191.mp4"> here </a>.
 
 
 ## Acknowledgements
